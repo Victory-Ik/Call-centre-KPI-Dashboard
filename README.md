@@ -17,7 +17,7 @@ This repository contains a Power BI dashboard designed to visualise key performa
 1. Download and install **Power BI Desktop** from [Microsoft Power BI](https://powerbi.microsoft.com/).
 2. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/Call-Center-KPI-Dashboard.git
+   git clone https://github.com/victory-ik/Call-Center-KPI-Dashboard.git
 Open the Call Center Solution.pbix file in Power BI.
 Explore the dashboard and customize it as needed.
 Data Sources
