@@ -1,42 +1,64 @@
-# Call-centre-KPI-Dashboard
+# Call Center KPI Dashboard
 
-## Overview
-This repository contains a Power BI dashboard designed to visualise key performance indicators (KPIs) and metrics for a call center solution. The dashboard provides insights into agent performance, call handling efficiency, customer satisfaction, and other critical operational metrics.
+### Dashboard Link: https://app.powerbi.com/groups/me/reports/b9ff04a2-8095-4f33-8bbb-369ad49be4dd/ReportSectione719ef80db76ae2815d3?experience=power-bi
 
-## Features
-- **Interactive Visuals**: Drill-through and slicers to analyze call center data effectively.
-- **Performance Metrics**: Displays KPIs such as average handling time, call resolution rate, agent utilization, and customer satisfaction scores.
-- **Custom Reports**: Insights into call trends, peak hours, and service level adherence.
-- **Data-Driven Decision Making**: Helps managers optimize operations and enhance customer experience.
+##  Overview
+The **Call Center KPI Dashboard** provides actionable insights into call center performance, agent efficiency, and customer satisfaction. This dashboard enables call center managers to track key metrics and make data-driven decisions to improve operations and enhance customer experience.
 
-## File Structure
-- 📂 `Call Center Solution.pbix` – Power BI report file containing the dashboard.
-- 📄 `README.md` – This documentation file describing the repository.
+##  Problem Statement
+Call centers handle thousands of interactions daily, making it crucial to monitor agent performance and service quality. This dashboard helps:
+- Identify areas needing improvement in customer satisfaction.
+- Analyze average call handling and resolution times.
+- Track agent efficiency and workload distribution.
+- Detect patterns in call volume and peak hours to optimize staffing.
 
-## Installation & Usage
-1. Download and install **Power BI Desktop** from [Microsoft Power BI](https://powerbi.microsoft.com/).
-2. Clone this repository:
-   ```sh
-   git clone https://github.com/victory-ik/Call-Center-KPI-Dashboard.git
-Open the Call Center Solution.pbix file in Power BI.
-Explore the dashboard and customize it as needed.
-Data Sources
-The dashboard is based on call center operational data, including call logs, agent performance reports, and customer feedback.
-Customization
-You can modify the visuals, filters, and reports in Power BI to align with specific business needs.
-Connect to live databases or integrate with additional data sources for real-time analytics.
-Learning Resources
-To enhance your Power BI skills and data visualization expertise, check out:
+##  Key Insights
+-  **Average Handling Time (AHT)**: Insights into call duration trends.
+-  **Agent Performance Metrics**: Productivity and efficiency evaluation.
+-  **Customer Satisfaction Analysis**: Rating trends from post-call surveys.
+-  **Call Resolution Time**: How quickly issues are resolved.
+-  **Call Trends & Peak Hours**: Identifying high-traffic periods for resource optimization.
 
-🎧 Podcasts: Data Stories, The BI Podcast
-📖 Articles: Power BI Best Practices
-License
-This project is licensed under the MIT License – see the LICENSE file for details.
+##  Steps Followed in Power BI Development
 
-Contributions
-Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit a pull request.
+### **Step 1: Data Preparation**
+- Imported call center dataset (CSV file).
+- Used Power Query to clean and preprocess data.
+- Checked for null values and applied necessary transformations.
 
-Author
-Your Name
-📧 [victoryikoabasi@gmail.com]
-🔗 [www.linkedin.com/in/victoryikoabasi]
+### **Step 2: Data Exploration**
+- Enabled **Column Quality, Distribution, and Profile** in Power Query Editor.
+- Verified missing values; handled NULLs in **Call Resolution Time** and **Customer Ratings** fields.
+
+### **Step 3: KPI Calculation & DAX Measures**
+- **Agent Utilization Rate** = `(Total Talk Time / Available Time) * 100`
+- **Average Handling Time (AHT)** = `Total Call Duration / Number of Calls`
+- **First Call Resolution (FCR)** = `Resolved Calls on First Attempt / Total Calls`
+- **Customer Satisfaction Score (CSAT)** = `Average(Customer Ratings)`
+
+
+# Report 
+
+### **Call Center KPI Overview**
+<img width="1093" alt="Image" src="https://github.com/user-attachments/assets/5f845e36-19fa-4ab5-be8a-af3c372f9309" />
+
+count of call center answered calls 
+<img width="1108" alt="Image" src="https://github.com/user-attachments/assets/bfc75350-292a-4e2b-9d27-fa3c0aa19886" />
+
+Count of total resolved calls
+<img width="992" alt="Image" src="https://github.com/user-attachments/assets/ee621034-1de2-4591-bea8-9dae19082dea" />
+
+Average speed of answer (in seconds)
+<img width="265" alt="Image" src="https://github.com/user-attachments/assets/28202d0a-40b3-4905-b3d9-7806b3411a13" />
+
+Average satisfaction rating
+<img width="1091" alt="Image" src="https://github.com/user-attachments/assets/26a26ba3-4e2e-44b6-9f52-855e28c9c91c" />
+
+Count of answered calls per Month
+<img width="1244" alt="Image" src="https://github.com/user-attachments/assets/fb397098-2a49-4daa-b3be-513c9fb6a2a4" />
+
+### **Agent Performance Insights**
+<img width="579" alt="Image" src="https://github.com/user-attachments/assets/a0009db1-5ef6-4aec-b14c-9d4fe4c0b3d3" />
+
+## 🔗 Installation 
+1. **Download & Install Power BI Desktop**: [Power BI Download](https://powerbi.microsoft.com/)
